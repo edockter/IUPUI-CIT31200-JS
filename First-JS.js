@@ -10,7 +10,7 @@ setTimeout(function(){
     alert("I forgot to mention the worst thing about the future -- there are rogue skeletons roaming the streets. Against all logic, they love to steal and eat pizza. A skeleton popped out of the ground and ate the pizza in midair. You have to take action.");
     
     var monsterHP = 20;     
-    var playerHP = 25;
+    var playerHP = 20;
     
     var playerHitChance = 0.80;  // punish the player if they somehow pick another weapon
     var monsterHitChance = 0.50; // 50% chance, seems fair
@@ -51,7 +51,7 @@ setTimeout(function(){
             criticalDamage += Math.round(Math.random() * 3 + 1);
             playerDamage += criticalDamage;
         }
-        if (hit > playerHitChance) {
+        if (hit > playerHitChance && playerHP > 0) {
             monsterHP -= playerDamage;            
             alert(((critical === 1) ? "C-C-C-CRITICAL HIT!  You did "+ criticalDamage + " extra damage!  " : "") + 
                 "You hit the skeleton and do " + playerDamage + " damage.  The monster now has " + monsterHP + " points.");
@@ -60,7 +60,7 @@ setTimeout(function(){
             alert("You missed, ya dummy! That skeleton still has " + monsterHP + " points.");
         }
         
-        if (monsterHit > monsterHitChance) {
+        if (monsterHit > monsterHitChance && monsterHP > 0) {
             playerHP -= monsterDamage;
             alert("The skeleton continues grinning smugly. He takes a slice of piping hot pizza from his ribcage and throws it at you, doing " + monsterDamage + " points of burn damage. You now have " + playerHP + " HP.  Your turn (isn't it nice of him to take turns?).");
         }
