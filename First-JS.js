@@ -1,6 +1,8 @@
 // CIT31200 - Advanced Web Site Design
 // Javascript Vol-1 Homework
 // By Eric Dockter
+
+// added 2 second timer. want this to load after html and apparently edge fonts takes forever
 setTimeout(function(){
 
     alert("It's the year 2250. The future is pretty nice; its basically like Futurama with less jokes. You work as pizza delivery guy; a fairly mundane career.");
@@ -15,17 +17,21 @@ setTimeout(function(){
 
     do {
         var weapon = prompt("Within reach is a sword, a bow and a footlong hot dog.  You're unsure why these items are on your car's dashboard but you don't have time for questions.  What do you choose?");
-
-        if (weapon === "sword") {
+        
+        switch (weapon) {
+        case "sword":
             playerHitChance = 0.30;
-        }
-        else if (weapon === "bow") {
+            break;
+            
+        case "bow":
             playerHitChance = 0.40;
-        }
-        else if (weapon === "footlong hot dog") {
+            break;
+        
+        case "footlong hot dog":
             playerHitChance = 0.1;      // Footlong hot dog is OP
-        }
-        else {
+            break;
+        
+        default:
             alert("You reach for a " + weapon + " but forget that item is nowhere near you.  The skeleton feels embarassed for you. His snickering causes you to drop 1 health point.");
             playerHP -= 1;
         }
