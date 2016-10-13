@@ -44,7 +44,7 @@ setTimeout(function(){
         var criticalDamage = 0;
         var monsterDamage = Math.round(Math.random() * 4);
         var hit = Math.random();
-        var monsterHit = Math.Random();
+        var monsterHit = Math.random();
         var critical = Math.round(Math.random());
         
         if (critical === 1) {
@@ -53,7 +53,7 @@ setTimeout(function(){
         }
         if (hit > playerHitChance) {
             monsterHP -= playerDamage;            
-            alert(((critical === 1) ? "C-C-C-CRITICAL HIT!  You did "+ criticalDamage + "extra damage!  " : "") + 
+            alert(((critical === 1) ? "C-C-C-CRITICAL HIT!  You did "+ criticalDamage + " extra damage!  " : "") + 
                 "You hit the skeleton and do " + playerDamage + " damage.  The monster now has " + monsterHP + " points.");
         }
         else {
@@ -62,13 +62,13 @@ setTimeout(function(){
         
         if (monsterHit > monsterHitChance) {
             playerHP -= monsterDamage;
-            alert("The skeleton continues grinning smugly. He takes a slice of piping hot pizza from his ribcage and throws it at you, doing " + monsterDamage + " of burn damage. You now have " + playerHP + " HP.  Your turn (isn't it nice of him to take turns?).");
+            alert("The skeleton continues grinning smugly. He takes a slice of piping hot pizza from his ribcage and throws it at you, doing " + monsterDamage + " points of burn damage. You now have " + playerHP + " HP.  Your turn (isn't it nice of him to take turns?).");
         }
         else {
             alert("The skeleton throws a slice and misses, doing no damage to you but leaving a greasy smudge on your rocket-car. You still have " + playerHP + " points.");
         }        
     }  while (monsterHP > 0 && playerHP > 0);
-
+    
     if (monsterHP < 0) {
         alert("You have defeated the attacking skeleton and can continue your work day. He was just trying to feed his skeleton family, you know; if you had asked him to stop he would have. Congratulations!");
     }
