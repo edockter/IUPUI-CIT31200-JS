@@ -12,23 +12,23 @@ setTimeout(function(){
     var monsterHP = 20;     
     var playerHP = 25;
     
-    var playerHitChance = 0.6;  // punish the player if they somehow pick another weapon
-    var monsterHitChance = 0.5; // 50% chance, seems fair
+    var playerHitChance = 0.80;  // punish the player if they somehow pick another weapon
+    var monsterHitChance = 0.50; // 50% chance, seems fair
 
     do {
         var weapon = prompt("Within reach is a sword, a bow and a footlong hot dog.  You're unsure why these items are on your car's dashboard but you don't have time for questions.  What do you choose?");
         
         switch (weapon) {
         case "sword":
-            playerHitChance = 0.30;
+            playerHitChance = 0.40;
             break;
             
         case "bow":
-            playerHitChance = 0.40;
+            playerHitChance = 0.60;
             break;
         
         case "footlong hot dog":
-            playerHitChance = 0.1;      // Footlong hot dog is OP
+            playerHitChance = 0.10;      // Footlong hot dog is OP
             break;
         
         default:
@@ -40,15 +40,15 @@ setTimeout(function(){
     alert("You pick up the " + weapon + " and prepare to do battle.  The skeleton grins (like always) and adopts a defensive posture.");
 
     do {
-        var playerDamage = Math.round(Math.random() * 5);       // Give the player a "house advantage"
+        var playerDamage = Math.round(Math.random() * 4 + 1);
         var criticalDamage = 0;
-        var monsterDamage = Math.round(Math.random() * 4);
+        var monsterDamage = Math.round(Math.random() * 4 + 1);
         var hit = Math.random();
         var monsterHit = Math.random();
-        var critical = Math.round(Math.random());
+        var critical = Math.round(Math.random() * 10);
         
-        if (critical === 1) {
-            criticalDamage += Math.round(Math.random() * 6);
+        if (critical >= 9) {
+            criticalDamage += Math.round(Math.random() * 3 + 1);
             playerDamage += criticalDamage;
         }
         if (hit > playerHitChance) {
@@ -69,13 +69,13 @@ setTimeout(function(){
         }        
     }  while (monsterHP > 0 && playerHP > 0);
     
-    if (monsterHP < 0) {
+    if (monsterHP <= 0) {
         alert("You have defeated the attacking skeleton and can continue your work day. He was just trying to feed his skeleton family, you know; if you had asked him to stop he would have. Congratulations!");
     }
-    else if (playerHP < 0) {
+    else if (playerHP <= 0) {
         alert("You died doing what you loved -- being beaten to death by a skeleton.  He took his " + monsterHP + " hit points and went back to school to change his life.  He went on to graduate summa cum laude from Taco Bell University (Harvard fell on hard times).");
     }
-    else if (playerHP < 0 && monsterHP < 0) {
+    else if (playerHP <= 0 && monsterHP <= 0) {
         alert("You and the skeleton have both perished. The police assume this was a suicide pact between a husband and wife (you don't want to see your obituary, trust me). ");
     }
 
