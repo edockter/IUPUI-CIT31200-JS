@@ -24,17 +24,15 @@ for (i = 1; i <= 100; i++) {
 
 // Simple but boring 
 for (i = 1; i <= 100; i++) {    
-    var outString = i;
-
     if (i % 15 == 0) 
     {
         console.log("fizzbuzz");
     }
-    else if (i % 3 == 0)  
+    else if (i % 3 === 0)  
     {
         console.log("fizz");
     }    
-    else if (i % 5 == 0)
+    else if (i % 5 === 0)
     {
         console.log("buzz");
     }
@@ -42,4 +40,10 @@ for (i = 1; i <= 100; i++) {
     { 
         console.log(i);
     }   
+}
+
+// Code Golf
+for (i = 1; i <= 100; i++) {
+    (i % 3 === 0) ? ((i % 5 === 0) ? console.log("fizzbuzz") : console.log('buzz'))  : 
+    ((i % 5 === 0) ? console.log('fizz') : console.log(i));
 }
