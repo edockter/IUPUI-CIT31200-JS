@@ -49,4 +49,13 @@ for (i = 1; i <= 100; i++) {
 
 // Xxxtreme unreadable Code Golf
 var o;
-for (i = 1; i <= 100; i++) { (i%3==0)?((i%5==0)?o='fizzbuzz':o='buzz'):((i%5==0)?o='fizz':o=i); console.log(o); }
+for (i = 1; i <= 100; i++) {(i%3==0)?((i%5==0)?o='fizzbuzz':o='buzz'):((i%5==0)?o='fizz':o=i); console.log(o);}
+
+// Best solution
+var o;
+for (i = 1; i <= 100; i++) {
+    o='';    
+    if (i % 3 == 0) { o += 'Fizz'; } 
+    if (i % 5 == 0) { o += 'Buzz'; }
+    console.log(answer || i);     
+}
