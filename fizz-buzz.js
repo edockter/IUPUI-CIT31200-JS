@@ -44,6 +44,9 @@ for (i = 1; i <= 100; i++) {
 
 // Code Golf
 for (i = 1; i <= 100; i++) {
-    (i % 3 === 0) ? ((i % 5 === 0) ? console.log("fizzbuzz") : console.log('buzz'))  : 
-    ((i % 5 === 0) ? console.log('fizz') : console.log(i));
+    (i % 3 === 0) ? ((i % 5 === 0) ? console.log("fizzbuzz") : console.log('buzz'))  : ((i % 5 === 0) ? console.log('fizz') : console.log(i));
 }
+
+// Xxxtreme unreadable Code Golf
+var o;
+for (i = 1; i <= 100; i++) { (i%3==0)?((i%5==0)?o='fizzbuzz':o='buzz'):((i%5==0)?o='fizz':o=i); console.log(o); }
