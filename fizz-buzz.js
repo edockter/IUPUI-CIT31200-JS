@@ -55,7 +55,7 @@ for (i = 1; i <= 100; i++) {(i%3==0)?((i%5==0)?o='fizzbuzz':o='buzz'):((i%5==0)?
 var o;
 for (i = 1; i <= 100; i++) {
     o='';    
-    if (i % 3 == 0) { o += 'Fizz'; } 
-    if (i % 5 == 0) { o += 'Buzz'; }
+    if (i % 3 == 0) { o += 'fizz'; } 
+    if (i % 5 == 0) { o += 'buzz'; }
     console.log(answer || i);     
 }
