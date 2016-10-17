@@ -8,19 +8,62 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 
-        <link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:700|Modak|Titillium+Web:700|Corben:400,700" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+        <!-- <link href="https://fonts.googleapis.com/css?family=Corben:400,700" rel="stylesheet"> -->
 
-        <title>Javascript Homework</title>
+        <title>Javascript Warmup</title>
     </head>
-    <body bgcolor="#52B38C" lang="en-US" style="font-family: 'Corben', cursive; padding: 5rem;">
+    <body bgcolor="#5bc0eb" lang="en-US" style="padding: 5rem;">
             <header>
-                <h1 style="font-size: 3rem;">This page exists only to load procedural javascript.</h1>
-                <h3>Get ready for some alerts.</h3>
-                
-                <h5 style="padding-top: 1rem; font-weight: 400;">You're going to see a lot of alerts.</h5>
-            </header>            
+                <h1>Welcome to Javascript Exercise 2.</h1>
+            </header>
+            
+            <hr />
+            <section>     
+                <h3>Mini-Exercise #1</h5>
+                <button class="btn" onclick="MiniExercise1('We', 'the', 'here.')" type="button" style="margin-left: 3rem;">Submit</button>
+                <p id="mini-exercise-1-output"></p>
+            </section>
+
+            <hr />
+            <section>
+                <h3>Mini-Exercise #2</h5>
+                <p>Please enter a number to check.</p>
+                <form>
+                    <input type="text" id="candidateNumber" name="candidateNumber" size="25" pattern="\d*" placeholder="Enter a Number" required />
+                    <button class="btn" type="button" onclick="MiniExercise2(document.getElementById('candidateNumber').value)">Submit</button>
+                </form>                                        
+            </section>
+            
+            <hr />
+            <section>
+                <h3>Mini-Exercise #3</h5>
+                <p>How would you like your coffee?</p>
+
+                <form id="coffee-form" name="coffee-form">
+                    <input id="sugar-checkbox" type="checkbox" name="coffee" value="sugar"><span class="checks">With sugar</span><br>
+                    <input id="cream-checkbox" type="checkbox" name="coffee" value="cream"><span class="checks">With cream</span><br>
+                    <input id="black-checkbox" type="checkbox" name="coffee" value="black"><span class="checks">Black coffee</span><br><br>
+                    <input class="btn" type="button" onclick="MiniExercise3()" value="Send order">
+                    <br><br><br>
+                    <input type="text" id="order" size="25" placeholder="Order will appear here.">
+                    <input class="btn" type="submit" value="Submit">
+                </form>
+            </section>
+            <hr />
+<!--
+            <form action="form_action.asp">
+                <input type="checkbox" name="coffee" value="cream">With cream<br>
+                <input type="checkbox" name="coffee" value="sugar">With sugar<br>
+                <br>
+                <input type="button" onclick="MiniExercise3()" value="Send order">
+                <br><br>
+                <input type="text" id="order" size="50">
+                <input type="submit" value="Submit">
+            </form>-->
     </body>
     <footer>        
-        <script src="First-JS.js"></script>                
+        <script src="js-warmup.js"></script>                
     </footer>
 </HTML>
