@@ -1,0 +1,59 @@
+h1 {
+    font-family: 'Corben', cursive; 
+    font-weight: 700;
+    font-size: 3rem;
+}
+h3 {
+    /*font-family: 'Titillium Web', sans-serif;*/
+    font-family: 'Corben', cursive;
+}
+p {
+    font-family: 'Corben', cursive;
+    font-weight: 400;
+}
+.checks {
+    font-family: 'Corben', cursive;
+    font-weight: 400;    
+    font-size: 14px;
+}
+section {
+    margin: 2rem;
+}
+.btn {
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 5px;
+  text-shadow: 0px 2px 5px #666666;
+  -webkit-box-shadow: 0px 1px 3px #666666;
+  -moz-box-shadow: 0px 1px 3px #666666;
+  box-shadow: 0px 1px 3px #666666;
+  font-family: 'Corben', cursive;
+  color: #473d3d;
+  font-size: 16px;
+  background: #F7B2BD;
+  padding: 5px 15px 5px 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #EF5D60;
+  text-decoration: none;
+}
+
+hr {    
+	margin: 2rem;
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #8c8b8b inset;
+}
+
+input {
+    font-family: 'Corben';
+    font-weight: 400;
+}
+
+input[type=text] {
+    font-family: 'Corben';
+    font-size: 16px;
+}
+
