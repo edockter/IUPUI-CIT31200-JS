@@ -1,0 +1,41 @@
+html, body, .container
+{
+    height: 100%; 
+    min-height: 100%;
+}
+
+#first {
+    float: left;
+    width: 20%;
+    height: 30%;
+    background-color: #84B4DB;
+}
+
+#second{
+    float: left;
+    width: 20%;
+    height: 70%;
+    background-color: #94CAF5;
+}
+
+
+#third{
+    float: right;
+    width: 80%;
+    height: 80%;
+    background-color: #668BA9;
+}
+
+#fourth {
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #6E95B6;
+}
+
+#fifth{
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #57768F;
+}
