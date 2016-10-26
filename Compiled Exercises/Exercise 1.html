@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by edockter (http://jsbin.com/pabeveq/3/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Homework - Javascript Exercise #1">
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+html, body, .container
+{
+    height: 100%; 
+    min-height: 100%;
+}
+
+#first {
+    float: left;
+    width: 20%;
+    height: 30%;
+    background-color: #84B4DB;
+}
+
+#second{
+    float: left;
+    width: 20%;
+    height: 70%;
+    background-color: #94CAF5;
+}
+
+
+#third{
+    float: right;
+    width: 80%;
+    height: 80%;
+    background-color: #668BA9;
+}
+
+#fourth {
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #6E95B6;
+}
+
+#fifth{
+    float: right;
+    width: 40%;
+    height: 20%;
+    background-color: #57768F;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<div id="first">first</div>
+<div id="third">third</div>
+<div id="second">second</div>
+<div id="fourth">fourth</div>
+<div id="fifth">fifth</div>
+</div>
+<script id="jsbin-javascript">
+// Write the JavaScript code that stores a reference to the "first" div in a variable.
+var firstDiv = document.getElementById("first");
+
+// Using JavaScript, add the CSS style that would hide the "first" div from view
+firstDiv.style.visibility = 'hidden';
+
+// Using JavaScript, update the "third" div to say "I am the largest div here!"
+document.getElementById("third").innerHTML = "I am the largest div here!";
+
+
+// Using JavaScript, change the font color of the "fifth" div to red
+document.getElementById("fifth").style.color = "red";
+</script>
+</body>
+</html>

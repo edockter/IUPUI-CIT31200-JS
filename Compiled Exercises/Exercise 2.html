@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by edockter (http://jsbin.com/vafiza/2/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Homework - Javascript Exercise #2">
+  <meta charset="utf-8">
+  <title>31200 - JS Exercise 2</title>
+<style id="jsbin-css">
+.evenNumber {
+  background-color: green;
+}
+
+.oddNumber {
+  background-color: red;
+}
+</style>
+</head>
+<body>
+  <div id="myNumber">2</div>
+<script id="jsbin-javascript">
+// Write a JavaScript function that returns true if a single value passed to it is even
+function checkNumber(number) {
+  if (number % 2 === 0) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+
+// Get the contents of the "myNumber" div and pass that value to your function
+var myNumberDiv = document.getElementById('myNumber');
+var test = checkNumber(myNumberDiv.innerHTML);
+
+
+// If the function returns true, add the "evenNumber" CSS class to the "myNumber" div; otherwise, add the "oddNumber" class to the "myNumber" div
+((test) ? myNumberDiv.className = 'evenNumber' : myNumberDiv.className = 'oddNumber');
+
+// Change the number in the "myNumber" div in the HTML panel to see if your JavaScript works for both even and odd numbers
+// Done
+</script>
+</body>
+</html>
