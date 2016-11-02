@@ -1,0 +1,19 @@
+input[type="button"] {
+  width: 100px;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+#greenBox {
+  background-color: green;
+}
+#redBox {
+  background-color: red;
+}
+#blueBox {
+  background-color: blue;
+}
