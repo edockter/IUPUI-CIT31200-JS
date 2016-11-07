@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- HTML5 Boilerplate -->
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Sam's Menswear</title>
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="True">
+	<meta name="MobileOptimized" content="320">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Stylesheets -->
+	<link rel="stylesheet" href="css/html5reset.css" media="all">
+	<link rel="stylesheet" href="css/responsivegridsystem.css" media="all">
+	<link rel="stylesheet" href="css/col.css" media="all">
+	<link rel="stylesheet" href="css/6cols.css" media="all">
+	<link rel="stylesheet" href="css/sams.css" media="all">
+
+	<!-- Responsive Stylesheets -->
+	<link rel="stylesheet" media="only screen and (max-width: 1024px) and (min-width: 769px)" href="/css/1024.css">
+	<link rel="stylesheet" media="only screen and (max-width: 768px) and (min-width: 481px)" href="/css/768.css">
+	<link rel="stylesheet" media="only screen and (max-width: 480px)" href="/css/480.css">
+
+	<!-- All JavaScript at the bottom, except for Modernizr which enables HTML5 elements and feature detects -->
+	<script src="js/modernizr-2.5.3-min.js"></script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+	<div id="headcontainer">
+		<header>
+		<div class="section group">
+			<div class="col span_1_of_6">
+			</div>
+			<div class="col span_1_of_6">
+				<img src="img/sams_logo.jpg" alt="Sam's Menswear logo" />
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="index.html">Home</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="#">About Us</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+				<div class="nav_button">
+					<a href="cart.html">My Cart</a>
+				</div>
+			</div>
+			<div class="col span_1_of_6">
+			</div>
+		</div>
+		</header>
+	</div>
+	<div id="maincontentcontainer">
+		<div id="maincontent">
+
+			<div class="section group">
+				<div class="col span_1_of_6">
+				</div>
+				<div class="col span_4_of_6">
+				<h3>Your Shopping Cart</h3>
+				</div>
+			</div>
+
+			<div class="section group">
+				<div class="col span_1_of_6">
+				</div>
+				<div class="col span_3_of_6">
+					<h4>Products</h4>
+					
+					<div class="product_listing" id="cart1">
+						<div class="product_image">
+							<img src="img/suit1_sm.jpg" alt="Suit thumbnail" />
+						</div>
+						<div class="product_info">
+							<div class="quantity_box">Quantity: <input type="text" id="qty1" value="1" style="width:20px"></input></div>
+							Product Name</br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$75.00</div>
+						</div>
+					</div>
+					
+					<div class="product_listing" id="cart2">
+							<div class="quantity_box">Quantity: <input type="text" id="qty2" value="2" style="width:20px"></input></div>
+						<div class="product_image">
+							<img src="img/pants2_sm.jpg" alt="Pants thumbnail" />
+						</div>
+						<div class="product_info">
+							Product Name</br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$45.00</div>
+						</div>
+					</div>
+					
+					<div class="product_listing" id="cart3">
+							<div class="quantity_box">Quantity: <input type="text" id="qty3" value="2" style="width:20px"></input></div>
+						<div class="product_image">
+							<img src="img/shoe1_sm.jpg" alt="Shoes thumbnail" />
+						</div>
+						<div class="product_info">
+							Product Name</br>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+							<div class="product_price">$110.00</div>
+						</div>
+					</div>
+				</div>
+				<div class="col span_1_of_6">
+					<div>
+						<h4>Price Details</h4>
+					</div>
+					<div>
+						Number of items:<div id="quantity_items">5</div><br />
+					</div>
+					<div>
+						<input type="button" id="updateQuantities" value="Update Quantities" />
+					</div>
+				</div>
+				<div class="col span_1_of_6">
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="footercontainer">
+		<footer class="group">
+			
+			<div id="smallprint">
+				The template for this site comes from <a href="http://www.responsivegridsystem.com/" target="_blank">http://www.responsivegridsystem.com/</a>.  Used under the Creative Commons license.
+			</div>
+
+		</footer>
+	</div>
+</div>
+
+
+
+	<!-- JavaScript at the bottom for fast page loading -->
+
+	<!-- Grab Google CDN's jQuery, with a protocol relative URL; fall back to local if necessary -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery-1.7.2.min.js"><\/script>')</script>
+
+	<!--[if (lt IE 9) & (!IEMobile)]>
+	<script src="js/selectivizr-min.js"></script>
+	<![endif]-->
+
+
+	<!-- More Scripts-->
+	<script src="js/responsivegridsystem.js"></script>
+
+
+</body>
+</html>
