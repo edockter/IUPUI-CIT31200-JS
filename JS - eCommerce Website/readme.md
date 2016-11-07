@@ -10,7 +10,7 @@ Open and review the attached HTML/CSS website.
 **USING JAVASCRIPT** (plain JavaScript - no frameworks!), add the following functionality:
 + On the home page of the site you see a single promo banner and four promo buttons.  In the HTML source code there are three additional promo banners.  Using JavaScript, create event listeners that respond to a click of one of the promo buttons.  When a button is clicked, display the appropriate promo banner on the screen.
 
-![Assignment Demo Image](https://github.com/edockter/IUPUI-CIT31200-JS/raw/master/JS%20-%20-eCommerce%20Website/assignment-info/assignment-image.png "Assignment Demo Image")
+![Assignment Demo Image](https://github.com/edockter/IUPUI-CIT31200-JS/raw/master/JS%20-%20eCommerce%20Website/assignment-info/assignment-image.png "Assignment Demo Image")
 
 ###Submitting Your Work
 Your assignment submission consists of two components:
@@ -20,4 +20,4 @@ Your assignment submission consists of two components:
 
 Assignments are due at 11:59pm on the due date listed.
 
-[Responsive eCommerce Website.zip](https://github.com/edockter/IUPUI-CIT31200-JS/raw/master/JS%20-%20-eCommerce%20Website/assignment-info/Responsive eCommerce Website.zip "Assignment Base")
+[Responsive eCommerce Website.zip](https://github.com/edockter/IUPUI-CIT31200-JS/raw/master/JS%20-%20eCommerce%20Website/assignment-info/Responsive eCommerce Website.zip "Assignment Base")
