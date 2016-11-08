@@ -18,8 +18,7 @@ shoesButton.addEventListener("click", function(){ switchBanner(shoesBanner); });
 shirtButton.addEventListener("click", function(){ switchBanner(shirtBanner); });
 pantsButton.addEventListener("click", function(){ switchBanner(pantsBanner); });
 
-// function takes 2 elements:
-// hides the first provided and shows the second 
+// Hide all banners, then show the 1 passed in
 function switchBanner(newBanner) {
     // hide all of the banners
     for (i = 0; i < allBanners.length; i++) {
