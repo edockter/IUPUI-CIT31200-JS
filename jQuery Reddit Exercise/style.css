@@ -1,0 +1,16 @@
+body {
+  display: flex-inline;
+  flex-direction: row;
+}
+img {
+  margin: 0 0 10px 0;
+  width: 98%;
+  height: auto;
+  border-radius: 12px;
+}
+.post {  
+  float: left;
+  width: 225px;
+  height: 250px;
+  margin: 5px;
+}
