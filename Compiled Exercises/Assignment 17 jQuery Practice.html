@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by anonymous (http://jsbin.com/mavobifelu/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<meta name="description" content="Homework - Assignment #17 jQuery Practice">
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+div {
+  color: white;
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.blue {
+  background-color: blue;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+
+.red {
+  background-color: red;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+
+.green {
+  background-color: green;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+
+.purple {
+  background-color: purple;
+  height: 40px;
+  width: 40px;
+  margin: 2px;
+}
+
+.bigbox {
+  height: 80px;
+  width: 80px;
+}
+</style>
+</head>
+<body>
+  
+  <div class="green">0</div>
+  <div class="blue">1</div>
+  <div class="red">2</div>
+  <div class="red">3</div>
+  <div class="red">4</div>
+  <div class="blue">5</div>
+  <div class="red">6</div>
+  <div class="red">7</div>
+  <div class="green">8</div>
+  <div class="blue">9</div>
+  <div class="blue">10</div>
+  <div class="green">11</div>
+  <div class="blue">12</div>
+  <div class="blue">13</div>
+  <div class="red">14</div>
+  <div class="green">15</div>
+  <div class="blue">16</div>
+  <div class="blue">17</div>
+
+<script id="jsbin-javascript">
+// SOLVE THE FOLLOWING USING jQuery CODE
+
+// ALL OF THE FOLLOWING WILL TAKE PLACE INSIDE THE $(document).ready() FUNCTION
+
+
+
+
+$( document ).ready(function() {
+
+  
+  // 1) Add the "bigbox" class to the very first div on the screen
+  $('.green:first').addClass('bigbox');  
+  // 2) Hide all divs with the "green" class
+  //$('.green').hide();
+  // 3) Add the "bigbox" class to all divs with the "red" class
+  $('.red').addClass('bigbox');
+  // 4) Remove the "bigbox" class from all divs that are evenly numbered  
+  $('div:even').removeClass('bigbox');
+  // 5) Use the jQuery toggleClass method to add the "bigbox" class to all of the divs that do not have it and remove it from all of those that do
+  $('div').toggleClass('bigbox');  
+  // 6) Create a filter that finds all divs with the "red" class but NOT the "bigbox" class and add the "purple" class to those divs
+  $('div.red').not('.bigbox').addClass('purple');
+  });
+</script>
+</body>
+</html>
