@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2016 by edockter (http://jsbin.com/zirixif/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+<style id="jsbin-css">
+.product {
+  background-color: #eee;
+  padding: 10px;
+  margin: 2px;
+}
+
+.hardware {
+  background-color: #6699FF;
+}
+
+.software {
+  background-color: #99FF33;
+}
+</style>
+</head>
+<body>
+  
+  <input type="radio" name="category_filter" value="all" checked="checked" />All
+  <input type="radio" name="category_filter" value="hardware" />Hardware
+  <input type="radio" name="category_filter" value="software" />Software
+  
+  <div class="product" data-category="hardware" data-price="10">
+    <div class="title">
+      Hardware: Product A
+    </div>
+    <div class="price">
+      $10.00
+    </div>
+  </div>
+  
+  <div class="product" data-category="hardware" data-price="40">
+    <div class="title">
+      Hardware: Product B
+    </div>
+    <div class="price">
+      $40.00
+    </div>
+  </div>
+  
+  <div class="product" data-category="hardware" data-price="80">
+    <div class="title">
+      Hardware: Product C
+    </div>
+    <div class="price">
+      $80.00
+    </div>
+  </div>
+  
+  <div class="product" data-category="software" data-price="10">
+    <div class="title">
+      Software: Product 1
+    </div>
+    <div class="price">
+      $10.00
+    </div>
+  </div>
+  
+  <div class="product" data-category="software" data-price="40">
+    <div class="title">
+      Software: Product 2
+    </div>
+    <div class="price">
+      $40.00
+    </div>
+  </div>
+  
+  <div class="product" data-category="software" data-price="80">
+    <div class="title">
+      Software: Product 3
+    </div>
+    <div class="price">
+      $80.00
+    </div>
+  </div>
+
+<script id="jsbin-javascript">
+$( document ).ready(function() {
+
+  // 1) Create a variable called "products" that contains all of the divs with a class of "product"
+  var products = $('.product');
+  
+  // EXAMPLE: This code creates a variable that filters the products based on the data-category attribute of the div tag (look at the HTML to see this attribute.)  software_products now contains an array of all of the products with data-category="software"
+  
+  var software_products = products.filter(function () {
+    return $(this).data("category") == "software";
+  });
+  
+  
+  // 2) Test it out!  Tell jQuery to hide all of the divs in the software_products array
+  software_products.hide();
+  
+  // 3) Create a variable called "hardware_products" that will only contain divs whose data-category attribute equals "hardware"
+  var hardware_products = products.filter(function () {
+    return $(this).data("category") == "hardware";
+  });
+  
+  // 4) Test it out!  Tell jQuery to hide all of the divs in the hardware_products array
+  hardware_products.hide();
+
+  // If you have correctly followed all of the instructions above, there should be NO products displayed in the Output panel
+
+  
+});
+</script>
+</body>
+</html>
